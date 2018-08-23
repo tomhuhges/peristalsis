@@ -12,11 +12,13 @@ export default {
   output: [
     {
       file: pkg.main,
-      format: 'cjs'
+      format: 'cjs',
+      sourcemap: true
     },
     {
       file: pkg.module,
-      format: 'es'
+      format: 'es',
+      sourcemap: true
     }
   ],
   plugins: [
@@ -29,6 +31,11 @@ export default {
       exclude: 'node_modules/**'
     }),
     resolve(),
-    commonjs()
+    commonjs({
+      include: 'node_modules/**',
+      namedExports: {
+        'node_modules/react-is/index.js': ['isValidElementType']
+      }
+    })
   ]
 }

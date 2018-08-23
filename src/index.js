@@ -2,25 +2,11 @@
  * @class ExampleComponent
  */
 
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { inuitFontSize, inuitClearfix, inuitHiddenVisually } from './tools'
 
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+export default styled.p`
+  ${inuitFontSize('16px')}
+  ${inuitClearfix()}
+  ${inuitHiddenVisually()}
+`
