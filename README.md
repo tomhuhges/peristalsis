@@ -10,7 +10,7 @@ layout for boborygmous components
 ## Install
 
 ```bash
-npm install --save peristalsis
+npm install --save-dev peristalsis
 ```
 
 ## Usage
@@ -18,12 +18,25 @@ npm install --save peristalsis
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'peristalsis'
+import { Layout, LayoutItem } from 'peristalsis'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <Layout gutter="small">
+        <LayoutItem width={["1/1", "1/2", "1/4"]}>
+          // ... children
+        </LayoutItem>
+        <LayoutItem width={["1/1", "1/2", "1/4"]}>
+          // ... children
+        </LayoutItem>
+        <LayoutItem width={["1/1", "1/2", "1/4"]}>
+          // ... children
+        </LayoutItem>
+        <LayoutItem width={["1/1", "1/2", "1/4"]}>
+          // ... children
+        </LayoutItem>
+      </Layout>
     )
   }
 }
