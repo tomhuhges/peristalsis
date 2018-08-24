@@ -1,10 +1,10 @@
 {
-  "name": "styled-components-inuitcss",
+  "name": "peristalsis",
   "version": "1.0.0",
-  "description": "inuitcss ported to styled-components",
+  "description": "layout modules for boborygmous",
   "author": "tomhuhges",
   "license": "MIT",
-  "repository": "tomhuhges/styled-components-inuitcss",
+  "repository": "tomhuhges/peristalsis",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",

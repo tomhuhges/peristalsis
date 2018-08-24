@@ -1,6 +1,6 @@
 {
-  "name": "styled-components-inuitcss-example",
-  "homepage": "https://tomhuhges.github.io/styled-components-inuitcss",
+  "name": "peristalsis-example",
+  "homepage": "https://tomhuhges.github.io/peristalsis",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
@@ -8,7 +8,7 @@
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "styled-components-inuitcss": "link:..",
+    "peristalsis": "link:..",
     "react-scripts": "^1.1.1"
   },
   "scripts": {

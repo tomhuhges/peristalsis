@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { Layout, LayoutItem } from 'styled-components-inuitcss'
+import { Layout, LayoutItem } from 'peristalsis'
 
 export default class App extends Component {
   render () {

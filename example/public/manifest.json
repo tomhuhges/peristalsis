@@ -1,6 +1,6 @@
 {
-  "short_name": "styled-components-inuitcss",
-  "name": "styled-components-inuitcss",
+  "short_name": "peristalsis",
+  "name": "peristalsis",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",

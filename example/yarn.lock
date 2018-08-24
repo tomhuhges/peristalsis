@@ -6372,7 +6372,7 @@ style-loader@0.19.0:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
 
-"styled-components-inuitcss@link:..":
+"peristalsis@link:..":
   version "0.0.0"
   uid ""
 

@@ -1,13 +1,16 @@
-# styled-components-inuitcss
+# peristalsis  
+ˌpɛrɪˈstalsɪs
+_**noun** physiology_
+> the involuntary constriction and relaxation of the muscles of the intestine or another canal, creating wave-like movements which push the contents of the canal forward.
 
-> inuitcss ported to styled-components
+layout for boborygmous components
 
-[![NPM](https://img.shields.io/npm/v/styled-components-inuitcss.svg)](https://www.npmjs.com/package/styled-components-inuitcss) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/peristalsis.svg)](https://www.npmjs.com/package/peristalsis) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save styled-components-inuitcss
+npm install --save peristalsis
 ```
 
 ## Usage
@@ -15,7 +18,7 @@ npm install --save styled-components-inuitcss
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'styled-components-inuitcss'
+import MyComponent from 'peristalsis'
 
 class Example extends Component {
   render () {
