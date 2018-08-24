@@ -1,6 +1,6 @@
 # peristalsis  
-ˌpɛrɪˈstalsɪs
-_**noun** physiology_
+ˌpɛrɪˈstalsɪs  
+_**noun** physiology_  
 > the involuntary constriction and relaxation of the muscles of the intestine or another canal, creating wave-like movements which push the contents of the canal forward.
 
 layout for boborygmous components
