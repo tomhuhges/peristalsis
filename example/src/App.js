@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'styled-components-inuitcss'
+import { Layout, LayoutItem } from 'styled-components-inuitcss'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent>Modern React component module</ExampleComponent>
+        <Layout gutter="huge">
+          <LayoutItem>Hello</LayoutItem>
+          <LayoutItem>There</LayoutItem>
+        </Layout>
       </div>
     )
   }
