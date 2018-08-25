@@ -53,6 +53,7 @@ import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import { rem } from 'polished';
 import theme from '../themes/theme';
+import { getWidthsByBreakpoint } from '../helpers';
 
 // By default we use the `font-size: 0;` trick to remove whitespace between
 // items. Set this to true in order to use a markup-based strategy like
@@ -114,8 +115,26 @@ export const LayoutItem = styled.div`
    /* Default item alignment is with the tops of each other, like most traditional grid/layout systems. */
   vertical-align: top;
 
-  /* By default, all layout items are full-width (mobile first) */
   width: 100%;
+  width: ${({theme, width}) => {
+    let css = `
+      /* By default, all layout items are full-width (mobile first) */
+      width: 100%;
+    `;
+    if (width) {
+      const widthMap = getWidthsByBreakpoint(width);
+      for (let breakpoint in widthMap) {
+        css += breakpoint === 'base' ? `
+          width: ${widthMap[breakpoint]}%;
+        ` : `
+          @media (min-width: ${theme.breakpoints[breakpoint]}px) {
+            width: ${widthMap[breakpoint]}%;
+          }
+        `;
+      }
+    }
+    return css;
+  }}
 
   /* Gutters provided by left padding:
   http://csswizardry.com/2011/08/building-better-grid-systems/ */
