@@ -18,25 +18,27 @@ npm install --save-dev peristalsis
 ```jsx
 import React, { Component } from 'react'
 
-import { Layout, LayoutItem } from 'peristalsis'
+import { Wrapper, Layout, LayoutItem } from 'peristalsis'
 
 class Example extends Component {
   render () {
     return (
-      <Layout gutter="small">
-        <LayoutItem width={["1/1", "1/2", "1/4"]}>
-          // ... children
-        </LayoutItem>
-        <LayoutItem width={["1/1", "1/2", "1/4"]}>
-          // ... children
-        </LayoutItem>
-        <LayoutItem width={["1/1", "1/2", "1/4"]}>
-          // ... children
-        </LayoutItem>
-        <LayoutItem width={["1/1", "1/2", "1/4"]}>
-          // ... children
-        </LayoutItem>
-      </Layout>
+      <Wrapper>
+        <Layout gutter="small">
+          <LayoutItem width="1/1 1/2@tablet 1/4@desktop">
+            // ... children
+          </LayoutItem>
+          <LayoutItem width="1/1 1/2@tablet 1/4@desktop">
+            // ... children
+          </LayoutItem>
+          <LayoutItem width="1/1 1/2@tablet 1/4@desktop">
+            // ... children
+          </LayoutItem>
+          <LayoutItem width="1/1 1/2@tablet 1/4@desktop">
+            // ... children
+          </LayoutItem>
+        </Layout>
+      </Wrapper>
     )
   }
 }
